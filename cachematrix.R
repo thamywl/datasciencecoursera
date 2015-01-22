@@ -33,7 +33,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Creates the inverse of the defined numeric matrix of the makeCacheMatrix function
 
-## cacheSolve takes in the function makeCacheMatrix and attempt to inverse the matrix defined in makeCacheMatrix
+## cacheSolve takes in a function 
+## The function must contain functions as created in makeCacheMatrix 
+## cacheSolve attempt to inverse the matrix defined in makeCacheMatrix
 ## It will first check if a inverse matrix was previously stored/cahced and will return the value if found
 
 cacheSolve <- function(x, ...) {
